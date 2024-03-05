@@ -1,0 +1,28 @@
+.card{
+    border:none;
+}
+
+.card-body{
+    margin-top: -50px;
+}
+
+
+
+/* Left Animation */
+@keyframes enter-animation {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .image-animation {
+    animation: enter-animation 1.0s 1;
+  }
+}
